@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -126,6 +126,7 @@
 		857D184F2536124400D8693A /* BeWithinTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857D184D2536123F00D8693A /* BeWithinTest.swift */; };
 		8913649429E6925F00AD535E /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14FB63194180C5009F2A08 /* utils.swift */; };
 		892FDF1329D3EA7700523A80 /* AsyncExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892FDF1229D3EA7700523A80 /* AsyncExpression.swift */; };
+		897CFF5D2A322B18003F9AC9 /* CwlCatchBadInstructionPosix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D9A78232647BC00802581 /* CwlCatchBadInstructionPosix.swift */; platformFilters = (tvos, watchos, ); };
 		898F28B025D9F4C30052B8D0 /* AlwaysFailMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898F28AF25D9F4C30052B8D0 /* AlwaysFailMatcher.swift */; };
 		899441EF2902EE4B00C1FAF9 /* AsyncAwaitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899441EE2902EE4B00C1FAF9 /* AsyncAwaitTest.swift */; };
 		899441F82902EF2500C1FAF9 /* DSL+AsyncAwait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899441F32902EF0900C1FAF9 /* DSL+AsyncAwait.swift */; };
@@ -155,15 +156,15 @@
 		CDC157912511957100EAA480 /* DSLTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC157902511957100EAA480 /* DSLTest.swift */; };
 		CDD80B831F2030790002CD65 /* MatcherProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD8CD1D1968AB07008ED995 /* MatcherProtocols.swift */; };
 		CDF5C57B2647B89B0036532C /* Equal+Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF5C57A2647B89B0036532C /* Equal+Tuple.swift */; };
-		CDFB6A231F7E07C700AD8CC7 /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A1E1F7E07C600AD8CC7 /* CwlCatchException.swift */; };
-		CDFB6A251F7E07C700AD8CC7 /* CwlCatchException.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A201F7E07C600AD8CC7 /* CwlCatchException.m */; };
-		CDFB6A271F7E07C700AD8CC7 /* CwlCatchException.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFB6A221F7E07C600AD8CC7 /* CwlCatchException.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDFB6A391F7E082500AD8CC7 /* CwlBadInstructionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A2A1F7E082400AD8CC7 /* CwlBadInstructionException.swift */; };
-		CDFB6A3B1F7E082500AD8CC7 /* CwlCatchBadInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A2B1F7E082400AD8CC7 /* CwlCatchBadInstruction.swift */; };
-		CDFB6A3F1F7E082500AD8CC7 /* CwlDarwinDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A2D1F7E082400AD8CC7 /* CwlDarwinDefinitions.swift */; };
+		CDFB6A231F7E07C700AD8CC7 /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A1E1F7E07C600AD8CC7 /* CwlCatchException.swift */; platformFilters = (ios, maccatalyst, macos, ); };
+		CDFB6A251F7E07C700AD8CC7 /* CwlCatchException.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A201F7E07C600AD8CC7 /* CwlCatchException.m */; platformFilters = (ios, maccatalyst, macos, ); };
+		CDFB6A271F7E07C700AD8CC7 /* CwlCatchException.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFB6A221F7E07C600AD8CC7 /* CwlCatchException.h */; platformFilters = (ios, maccatalyst, macos, watchos, ); settings = {ATTRIBUTES = (Public, ); }; };
+		CDFB6A391F7E082500AD8CC7 /* CwlBadInstructionException.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A2A1F7E082400AD8CC7 /* CwlBadInstructionException.swift */; platformFilters = (ios, maccatalyst, macos, ); };
+		CDFB6A3B1F7E082500AD8CC7 /* CwlCatchBadInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A2B1F7E082400AD8CC7 /* CwlCatchBadInstruction.swift */; platformFilters = (ios, maccatalyst, macos, ); };
+		CDFB6A3F1F7E082500AD8CC7 /* CwlDarwinDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A2D1F7E082400AD8CC7 /* CwlDarwinDefinitions.swift */; platformFilters = (ios, maccatalyst, macos, ); };
 		CDFB6A471F7E082500AD8CC7 /* CwlMachBadInstructionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A341F7E082400AD8CC7 /* CwlMachBadInstructionHandler.m */; };
-		CDFB6A491F7E082500AD8CC7 /* CwlMachBadInstructionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFB6A361F7E082400AD8CC7 /* CwlMachBadInstructionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDFB6A4B1F7E082500AD8CC7 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A371F7E082400AD8CC7 /* mach_excServer.c */; };
+		CDFB6A491F7E082500AD8CC7 /* CwlMachBadInstructionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFB6A361F7E082400AD8CC7 /* CwlMachBadInstructionHandler.h */; platformFilters = (ios, maccatalyst, macos, watchos, ); settings = {ATTRIBUTES = (Public, ); }; };
+		CDFB6A4B1F7E082500AD8CC7 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6A371F7E082400AD8CC7 /* mach_excServer.c */; platformFilters = (ios, maccatalyst, macos, ); };
 		DA9E8C831A414BB9002633C2 /* DSL+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9E8C811A414BB9002633C2 /* DSL+Wait.swift */; };
 		DD72EC651A93874A002F7651 /* AllPassTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD72EC631A93874A002F7651 /* AllPassTest.swift */; };
 		DD9A9A9019CF43AD00706F49 /* BeIdenticalToObjectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9A9A8D19CF413800706F49 /* BeIdenticalToObjectTest.swift */; };
@@ -889,6 +890,7 @@
 				0477153523B740AD00402D4E /* NimbleTimeInterval.swift in Sources */,
 				1FD8CD3D1968AB07008ED995 /* BeAnInstanceOf.swift in Sources */,
 				1FD8CD511968AB07008ED995 /* BeLogical.swift in Sources */,
+				897CFF5D2A322B18003F9AC9 /* CwlCatchBadInstructionPosix.swift in Sources */,
 				1F1871D91CA89EF100A34BF2 /* NMBExpectation.swift in Sources */,
 				DA9E8C831A414BB9002633C2 /* DSL+Wait.swift in Sources */,
 				DDB1BC7A1A92235600F743C3 /* AllPass.swift in Sources */,
